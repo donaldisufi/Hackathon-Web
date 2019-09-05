@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Titulli</title>
+        <link rel="stylesheet" href="css/hacka.css">
+        <script src="http://code.jquery.com/jquery-3.2.1.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans|Raleway" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|PT+Sans|Raleway" rel="stylesheet">
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <nav class="nav bar-fixed-top" style="z-index: 1;">
+            <div id="nav1" >
+                       <div class="menu-icon">
+                        <i class="fa fa-bars fa-2x"></i>
+                    </div>
+                    <div class="logo">
+                        <a href="#"><img src="css/images/intense.png" alt="asds"> </a><i>Restaurants</i>
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li style="color: black;" class="active"><a href="#" style="text-decoration: none;"><b>HOME</b></a></li>
+                            <li><a href="#" style="text-decoration: none;"><b> ABOUT US</b></a></li>
+                            <li><a href="#"style="text-decoration: none;"><b>MENU</b></a></li>
+                            <li><a href="#"style="text-decoration: none;"><b>GALLERY</b></a></li>
+                            <li><a href="#"style="text-decoration: none;"><b>EVENTS</b></a></li>
+                            <li><a href="#"style="text-decoration: none;"><b>CONTACTS</b></a></li>
+                        </ul>
+                    </div>
+             </div>
+                </nav>
+                <div style="height: 80vh">
+                    <img src="css/images/icon.png" alt="" style="margin: 10% 0px 0px 43%">
+                    <h1 class="font-accent" style="margin-left: 40%;color: white">
+                        <span class="big">
+                            Intense Restaurant
+                        </span>
+                    </h1>
+                    <p style="margin-left: 36%;color: white;font-size:20px;"> <span class="glyphicon glyphicon-map-marker"></span>4578 Marmora Road, Glasgow D04 89GR</p>
+                    <p style="margin-left: 38%;color: white;font-size:20px;"> <span class="glyphicon glyphicon-time"></span>10:00 am - 11:00 pm <span class="glyphicon glyphicon-earphone"></span> 800 23456789</p>
+                    <p style="font-size: 19px;color: white;margin-left: 10%; text-align: center">We introduce new cultures to visitors through cuisines of various countries, offering a special dish for <br>
+                        everyone regardless of their food preferences.</p>
+                    <button id="reservation" type="button" class="btn btn-info" style="text-align: center;margin-left: 42%; padding: 20px; background-color:#f14814;color: white; font-weight: bolder;font-size: 17px; border-color: #f14814"><a href="#reservation2" style="text-decoration: none;color: white; border : 1px solid darkorange;"> MAKE A RESERVATION </a></button>
+                </div>
+            </header>
+
+            <div class="row">
+                <div class="col-md-6" style="height: 400px;">
+                    <div style="hieght:400px; padding: 20px;">
+                        <h1 id="h11">
+                            <span class="reveal-block font-accent big"> Welcome</span><br>   
+                            <span class="reveal-block offset-top-4 h3 text-light text-uppercase"> To Our Restaurant</span>   
+                        </h1> 
+                        <hr style="width: 10%;margin-left: 0px;background: #f14814;height: 5px;">
+                        <p id="p1">Would you like to savor the exquisite cuisine and bring the art of dining to a new level? We obtain the freshest products from reputable purveyors and incorporate them into our exclusive dishes. Our menus are influenced by culinary traditions of Europe, Far East and other parts of the world. We are open to experiments and often add new dishes to our a la carte menu. Our courteous and attentive waiters in smoking jackets will bring you anything you wish.</p>
+
+
+                    </div>
+                </div>
+                <div class="col-md-6" style="height: 400px;">
+                    <div class="mainer" style="padding-top: 20px;">
+                        <iframe style="margin-top: 8px;" width="680" height="315" src="https://www.youtube.com/embed/MG6jHxAfwQk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="row" style="height: 500px;">
+                <div class="col-md-12" id="menu">
+                    <div>
+                        <h1 class="font-accent" style="color: white;margin-left: 40%;margin-top: 10%;font-size: 40px;font-family: segoe print">
+                            <span class="big">
+                                Our Menu
+                            </span>
+                        </h1>
+                        <p style="margin-left: 30%;font-size: 30px;color: white">BREAKFAST <span class="glyphicon glyphicon-minus"></span> LUNCHES<span class="glyphicon glyphicon-minus"></span>DINNERS </p>
+
+                    </div>
+
+
+
+
+                </div>
+            </div>
+            <div class="row" id="row">
+                <div class="col-md-12" style="height: 100px;">
+                    <ul class="nav nav-tabs" id="ul">
+                        <li role="presentation" class="active" id="all"><a href="#row">ALL</a></li>
+                        <li role="presentation"><a href="#row" id="breakfast">BREAKFASTS</a></li>
+                        <li role="presentation"><a href="#row" id="lunch">LUNCHES</a></li>
+                        <li role="presentation"><a href="#row" id="dinner">DINNERS</a></li>
+                        <li role="presentation"><a href="#row" id="dessert">DESSERTS</a></li>
+                        <li role="presentation"><a href="#row" id="dessert">DRINKS</a></li>
+                    </ul>
+                </div>
+
+            </div>  
+
+            <div class="row" style="height: 500px;">
+                <div class="col-md-4" style="height: 500px;padding-top: 0px; display: block" id="divbreakfast">
+                    <div style="padding-left:  15%;">
+                        <h1 class="h1food">
+                            <b>
+                                OLD TIMER'S BREAKFAST.... <span class="glyphicon glyphicon-euro"></span>22.00
+
+                            </b>
+                        </h1>
+                        <p>
+                            ( Two eggs cooked to order with grits, sawmill gravy, homemade buttermilk biscuits & real butter ) 
+                        </p>
+
+                        <h1 class="h1food">
+                            <b>
+                                FRESH START SAMPLER...<span class="glyphicon glyphicon-euro"></span>37.00
+                            </b>
+                        </h1>
+                        <p>
+                            ( Start your day with a mix of low fat vanilla yogurt, fresh seasonal fruit topped with our honey mix )   
+                        </p>
+
+                        <h1 class="h1food">
+                            <b>
+                                DOUBLE MEAT BREAKFAST...<span class="glyphicon glyphicon-euro"></span>42.00
+
+                            </b>
+                        </h1>
+                        <p>
+                            ( Three eggs cooked to order with a full order of bacon and sausage patties ) 
+                        </p>
+
+                        <h1 class="h1food">
+                            <b>
+                                CRAB & AVOCADO BRUSCHETTA...<span class="glyphicon glyphicon-euro"></span>19.00 
+                            </b>
+                        </h1>
+                        <p>
+                            ( Fresh white&brown crab, crunchy fennel, smashed avocado, yoghurt & chilli ) 
+                        </p>
+
+
+                    </div>
+
+
+                </div>
+
+                <div class="col-md-4" style="height:400px; display: block;" id="divlunch">
+                    <div id="divmrenalunch">
+                        <h1 class="h1lunch">
+                            <b>
+                                TURKEY MILANESE... <span class="glyphicon glyphicon-euro"></span>22.00
+
+                            </b> 
+                        </h1>
+                        <p>
+                            ( Stuffed with prosciutto & provolone, breadcrumbed & topped with a free-range egg & black summer truffle. )  
+                        </p>
+
+                        <h1 class="h1lunch">
+                            <b>
+                                FRITTO MISTO...... <span class="glyphicon glyphicon-euro"></span> 37.00
+                            </b> 
+                        </h1>
+                        <p>
+                            ( Mixed seasonal flash-fried sustainable fish & shellfish served with chunky Italian tartare sauce & lemon. )  
+                        </p>
+
+                        <h1 class="h1lunch">
+                            <b>
+                                ITALIAN STEAK FRITES.... <span class="glyphicon glyphicon-euro"></span>42.00
+
+                            </b> 
+                        </h1>
+                        <p>
+                            ( Flash-grilled prime beef steak, served with Italian-spiced skinny fries & crunchy vegetable slaw. )
+
+                        </p>
+
+                        <h1 class="h1lunch">
+                            <b>
+                                BAKED CRESPELLE... <span class="glyphicon glyphicon-euro"></span>19.00
+
+                            </b> 
+                        </h1>
+                        <p>
+                            ( Spinach, Westcombe ricotta & basil baked in gluten-free buckwheat pancakes with smoked mozzarella, sweet buttery leeks, Sicilian tomato sauce & Parmesan. ) 
+                        </p> 
+                    </div>
+
+
+                </div>
+
+                <div class="col-md-4" style="height:400px; display: block" id="divdinner">
+                    <div id="divmrenadinner">
+                        <h1 class="h1dinner">
+                            <b>
+                                OUR FAMOUS PRAWN LINGUINE... <span class="glyphicon glyphicon-euro"></span>22.00  
+                            </b>
+                        </h1>
+                        <p>
+                            ( Fried garlicky prawns, fennel, tomatoes, chilli, saffron, fish broth & lemony rocket. ) 
+                        </p>
+
+                        <h1 class="h1dinner">
+                            <b>
+                                GNOCCHI GENOVESE... <span class="glyphicon glyphicon-euro"></span>37.00
+
+                            </b>
+                        </h1>
+                        <p>
+                            ( Potato gnocchi with green beans, crushed purple potatoes, basil pesto, toasted pine nuts, bella lodi & ricotta. )
+                        </p>
+
+                        <h1 class="h1dinner">
+                            <b>
+                                PENNE CARBONARA... <span class="glyphicon glyphicon-euro"></span>42.00
+
+                            </b>
+                        </h1>
+                        <p>
+                            ( Crispy chunks of smoked pancetta, sweet buttery leeks, lemon & a traditional carbonara sauce. )
+                        </p>
+
+                        <h1 class="h1dinner">
+                            <b>
+                                THREE-CHEESE CARAMELLE... <span class="glyphicon glyphicon-euro"></span>19.00
+
+                            </b>
+                        </h1>
+                        <p>
+                            ( Beautiful filled pasta with ricotta, provolone, bella lodi & spinach, served with creamy tomato, garlic, basil & rosé wine sauce. )  
+                        </p>
+
+
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12" id="gallery">
+                    <div style="padding-top: 10%;">
+                        <h1 class="font-accent" id="h1gallery">
+                            <span class="big">
+                                OUR GALLERY
+                            </span>
+                        </h1>
+                        <h1 class="font-accent" id="h1undergallery">
+                            CHECKOUT  OUR  SPACE
+                        </h1> 
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="row" style="padding-top:5%;">
+                <div class="col-md-4" style="height: 680px;">
+                    <div class="col-md-6" style="padding-top: 5px;" >
+                        <div style="padding-top: 5px;padding-left: 5px;">
+
+
+                            <img src="css/images/gallery1.jpg" alt="" height="200px;">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6" >
+                        <div style="padding-right: 15px; padding-top: 7px;">
+                            <a href="">
+                                <img src="css/images/gallery2.jpg" alt="" height="200px" width="220px">
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="col-md-12" style="height: 400px;">
+                        <div style="padding:10px; padding-left: 5px;">
+                            <img src="css/images/gallery12.jpg" width="460px" height="440px" alt="">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-4" style=" height: 680px;padding-left: 0px;">
+                    <div class="col-md-12">
+                        <div style="padding-top: 5px;padding-left: 0px;">
+                            <img src="css/images/gallery3.jpg" alt="" width="480px" height="300px">
+                        </div>
+
+                    </div>
+                    <div class="col-md-6">
+                        <div style="padding-top: 13px;">
+                            <img src="css/images/galleryqika.jpg" alt="" height="335px">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div style="padding-top: 13px;">
+                            <img src="css/images/galleryqika2.jpg" alt=""  width="225px;"height="335px">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4" style="height: 600px; ">
+                    <div class="col-md-12" style="padding-top: 5px; padding-left: 0px;">
+                        <div style="padding-right: 10px;padding-left: 0px;">
+                            <img src="css/images/gallery33.jpg"  width="500px" height="400px"alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6" style="padding-top: 5px;padding-left: 0px;">
+                        <div>
+                            <img src="css/images/pica.jpg" alt="" height="250px">
+                        </div>
+
+
+                    </div>
+                    <div class="col-md-6" style="padding-top: 5px;padding-left: 0px;">
+                        <div>
+                            <img src="css/images/efunda.jpg" alt="" width="250px" height="250px">
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="row" id="row1">
+                <div class="col-md-12" id="reservation1">
+
+                    <div style="background: black; height: 500px;padding-top: 10%;">
+                        <h1 class="reserve">
+                            RESERVE NOW 
+                        </h1>
+                        <h1 id="every">
+                            EVERY GUEST IS SPECIAL HERE
+
+                        </h1>
+                        <hr style="width: 5%;height: 1%;background-color: #f14814">
+
+                        <div class="inputgroup">
+                            <p class="p">Name: </p>
+                            <input type="text"  style="background-color: black;border: 2px solid #f14814;width: 100%;height:100%; color: white; padding: 2px;">  
+                        </div>
+                        <div class="inputgroup1">
+                            <p class="p"> E-mail:</p>
+                            <input type="text" style="background-color: black;border: 2px solid #f14814;width: 100%;height:100%; color: white; padding: 2px;" >
+                        </div>
+                        <div class="inputgroup2">
+                            <p class="p"> Date:</p>
+                            <input type="date" class="input"   style="background-color: black;border: 2px solid #f14814;width: 100%;height:100%; color: white; padding: 2px;">
+                        </div>
+                        <div class="input123">
+                            <p class="p">Time:</p>
+                            <input type="time" style="background-color: black;border: 2px solid #f14814;width: 100%;height:100%; color: white; padding: 2px;" >
+                        </div>
+                        <div class="select">
+                            <p class="p"> Persons:</p>
+                            <select name="Persons" id="persons">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+                        <button id="reservation2" type="button" class="btn btn-info" style="text-align: center;margin-left: 42%;margin-top: 4%; padding: 20px; background-color:#f14814;color: white; font-weight: bolder;font-size: 17px; border-color: #f14814"><a href="#row1" style="text-decoration: none;color: white;"> MAKE A RESERVATION </a></button>
+                    </div>
+
+
+
+
+                </div>
+
+
+
+
+            </div>
+
+            <div class="row">
+                <div class="col-md-12" id="footer">
+                    <div class="col-md-4" id="footer1">
+                        <div>
+                            <img src="css/images/intense.png" alt="">
+                            <p class="p">Get the best dining experience</p>
+                            <p class="p">Address:</p>
+                            <p class="p1">28 Jackson Blvd <br>
+                                1020 Chicago <br> 
+                                IL 60604-2340.</p>
+                            <p class="p1">Telephone: +1 800 559 6580 <br>
+                                E-mail: mail@demolink.org</p>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4" id=footer2>
+                        <div>
+                            <h1 class="familyh1">
+                                <b>WHAT PEOPLE SAY</b>
+                            </h1> 
+                            <p class="p1">"This is one of the best restaurants I have visited. Everything was excellent. The food was served in a very creative way. Would recommend to all."</p>
+                            <h2 id="h2"><b>- ALEX MERPHY</b></h2>
+                            <a href="https://www.facebook.com/" class="fa fa-facebook" target="_blank"></a>
+                            <a href="https://twitter.com/?lang=en" class="fa fa-twitter" target="_blank"></a>
+                            <a href="https://plus.google.com/discover" class="fa fa-google" target="_blank"></a>
+                            <a href="https://www.linkedin.com/" class="fa fa-linkedin" target="_blank"></a>
+                            <a href=""><span class="glyphicon glyphicon-chevron-up" id="span"></span></a>
+                            <p style="margin-top: 170px;">Intense Restaurant © 2018 . Privacy Policy</p>
+                        </div>
+
+
+
+                    </div>
+                    <div class="col-md-4" id="footer3">
+                        <div>
+                            <form action="" method="get">
+                                <h3 style="color: white;font-size: 15px;"><b>CONTACT US</b></h3>
+                                <b><input type="text" placeholder="Name" id="name" required></b><br>
+                                <b><input type="email" placeholder="E-Mail" id="email" required></b><br>
+                                <b><textarea rows="4" cols="50" name="comment" form="usrform" id="text" required>Message here..</textarea></b>
+
+                                <button type="submit" id="butoni">
+                                    Submit
+                                </button>
+
+                            </form>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+
+            $(document).ready(function()  {
+                $(".menu-icon").on("click", function() {
+                    $("nav ul").toggleClass("showing");
+                    $("nav1").css('position','absolute');
+                    $("nav1").css('display','block');
+                    $("nav1").css('background-color','black');
+                });
+            });
+            $('#all').click(function(){
+                $('#divbreakfast').css('display','block')
+                $('#divlunch').css('display','block')
+                $('#divdinner').css('display','block')
+            });
+
+            $('#breakfast').click(function(){
+                $('#divbreakfast').css('display','block')
+                $('#divlunch').css('display','none')
+                $('#divdinner').css('display','none')
+            });
+
+            $('#lunch').click(function(){
+                $('#divbreakfast').css('display','none')
+                $('#divlunch').css('display','block')
+                $('#divdinner').css('display','none')
+                $('#divmrenalunch').css('padding-left','15px')
+            });
+            $('#dinner').click(function(){
+                $('#divbreakfast').css('display','none')
+                $('#divlunch').css('display','none')
+                $('#divdinner').css('display','block')
+                $('#divmrenadinner').css('padding-left','25px')
+            });
+           $('#reservation').mouseover(function()
+                                      {
+               $('#reservation').css('background-color','darkorange')
+               .mouseout(function(){
+                   $('#reservation').css('background-color','#f14814')
+               })
+           });
+    
+             $('#reservation2').mouseover(function()
+                                      {
+               $('#reservation2').css('background-color','darkorange')
+               .mouseout(function(){
+                   $('#reservation2').css('background-color','#f14814')
+               })
+           });
+            $('#span').mouseover(function(){
+                $('#span').css('background-color','darkorange')
+                .mouseout(function(){
+                    $('#span').css('background-color','#f14814')
+                })
+            })
+            $('#butoni').mouseover(function(){
+                $('#butoni').css('background-color','darkorange')
+                .mouseout(function(){
+                     $('#butoni').css('background-color','#f14814')
+                })
+            })
+        </script>
+
+
+    </body>
+</html>
